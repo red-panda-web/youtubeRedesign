@@ -33,13 +33,13 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
+	background-color: #fff;
 }
 
 .container {
-	max-width: 1370px;
+	max-width: 1440px;
 	height: 100%;
 	margin: 0 auto;
-	padding: 0 10px;
 }
 
 .headerBody {
@@ -47,6 +47,7 @@ header {
 	justify-content: space-between;
 	height: 60px;
 	z-index: 2;
+	padding: 0 45px;
 }
 
 .headerBody__left, .headerBody__center, .headerBody__right{
@@ -144,17 +145,23 @@ header {
 
 /*------------------------------------------------------------------------------*/
 
-/*----------------------------------	Aside Menu	----------------------------------*/
+/*--------------------------------	Aside Menu	--------------------------------*/
+
+main{
+	display: flex;
+	height: 100%;
+	padding: 60px 0 0 0;
+}
+
 .aside{
 	height: 100%;
-	width: 255px;
-	padding: 60px 0 0 0;
+	flex: 0 0 300px;
 }
 
 .asideBody {	
 	display: flex;
 	flex-direction: column;
-	padding: 39px 40px 0 0;
+	padding: 39px 40px 0 45px;
 	height: 100%;
 	border-right: 1px solid #f5f5f7;
 	
@@ -251,3 +258,161 @@ header {
 		color: #959fbb;
 	}
 }
+
+
+/*------------------------------------------------------------------------------*/
+
+/*-----------------------------	Channel Page Header	--------------------------*/
+
+.channelPage {
+	flex: 1 1 auto;
+	height: 100%;
+}
+
+.channelPage__header {
+	width: 100%;
+	height: 305px;
+	padding: 33px 110px 33px 115px;
+	background: url('../../img/bg_57.png') 0 0 no-repeat;
+}
+
+.channelPage__header-Avatar {
+	width: 96px;
+	height: 96px;
+	box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.34);
+	border-radius: 5px;
+	img{
+		object-fit: cover;
+	}
+}
+
+.channelPage__header-Info {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	position: relative;
+}
+
+.channelName {
+	font-family: HelveticaNeue;
+	font-size: 22px;
+	letter-spacing: 0.01em;
+	color: #ffffff;
+	margin: 0 22px 0 5px;
+	span{
+		font-weight: 700;
+	}
+}
+
+.subscribeBtn {
+	button{
+		width: 96px;
+		height: 30px;
+		background-color: #f24f86;
+		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+		border-radius: 3px;
+		font-weight: 500;
+		letter-spacing: 0.01em;
+		color: #ffffff;
+	}
+}
+
+.socialBtn {
+	display: flex;
+	position: absolute;
+	right: 0;
+}
+
+.socialBtn__twitter, .socialBtn__facebook, .socialBtn__google {
+	width: 28px;
+	height: 28px;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+	border-radius: 3px;
+	a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.socialBtn__twitter{
+	background: url('../../img/icons/twitterIcon.png') 50% 50% no-repeat, #4dccf1;
+}
+
+.socialBtn__facebook {
+	background: url('../../img/icons/facebookIcon.png') 50% 50% no-repeat, #8094f5;
+	margin: 0 7px 0 8px;
+}
+
+.socialBtn__google {
+	background: url('../../img/icons/google_Icon.png') 50% 50% no-repeat,  #f968a4;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/*------------------------------	Channel Page Body	-----------------------------*/
+
+
+.channelPage__body {
+	position: relative;
+	top: -57px;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 37px 40px;
+	background-color: #ffffff;
+	border-radius: 3px;
+}
+.channelNav {
+	height: 35px;
+	ul{
+		display: flex;
+		height: 100%;
+		li{
+			&:hover{
+				border-bottom: 3px solid #719dff;
+				border-radius: 1.5px;
+			}
+			a{
+				display: block;
+				height: 100%;
+				font-weight: 500;
+				letter-spacing: 0.01em;
+				color: #434f74;
+			}
+		} 
+		li+li{
+			margin-left: 50px;
+		}
+	}
+}
+.mainVideo {
+}
+.mainVideo__video {
+}
+.mainVideo__info {
+}
+.mainVideo__title {
+}
+.mainVideo__views {
+}
+.mainVideo__desc {
+}
+.mainVideo__releaseDate {
+}
+.mainVideo__releaseBy {
+}
+.mainVideo__downloadLinks {
+}
+.downloadLink {
+}
+.mainVideo__produced {
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------*/
