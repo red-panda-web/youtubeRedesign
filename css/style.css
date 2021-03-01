@@ -97,7 +97,7 @@ body {
 /*----------------------------------	Header	----------------------------------*/
 header {
   position: fixed;
-  z-index: 10;
+  z-index: 15;
   top: 0;
   left: 0;
   width: 100%;
@@ -440,7 +440,7 @@ main {
 /*--------------------------- Channel Page Main video	--------------------------*/
 .mainVideo {
   display: flex;
-  padding: 35px 0;
+  padding: 35px 0 45px 0;
 }
 
 .mainVideo__video {
@@ -507,7 +507,7 @@ main {
 .videoLine {
   position: relative;
   width: 100%;
-  padding: 50px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 .videoLine__title {
@@ -532,7 +532,7 @@ main {
 }
 
 .videoCard__description {
-  padding: 23px 20px;
+  padding: 21px 20px;
 }
 
 .videoCard__name {
@@ -548,12 +548,54 @@ main {
   font-weight: 500;
   color: #6a93ff;
   font-size: 13px;
+  letter-spacing: 0.01em;
+}
+
+.videoCard__author {
+  margin: 8px 0 36px 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: #434f74;
+}
+
+.videoCard__statistic {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #959fbb;
+}
+
+.videoCard__viewesCount {
+  background: url("../../img/icons/eyeIcon.png") 0 0 no-repeat;
+  padding: 0 0 0 25px;
+}
+
+.lastSlide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.lastSlide__viewMore {
+  margin: 50% 0;
+  padding: 0 0 0 45px;
+  background: url("../../img/icons/blueArrowRight.png") 78% 50% no-repeat;
+}
+.lastSlide__viewMore a {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #959fbb;
 }
 
 .swiper-button-prev, .swiper-button-next {
   width: 48px;
   height: 48px;
-  top: 80%;
+  top: 67%;
   border-radius: 50%;
   background-color: #ffffff;
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.05);
@@ -570,6 +612,21 @@ main {
 .swiper-button-next {
   right: -45px;
   background: url("../../img/icons/arrowRight.png") 50% 50% no-repeat;
+}
+
+.reload {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+  padding: 10px 0;
+}
+
+.reload__btn {
+  width: 19px;
+  height: 17px;
+  background: url("../../img/icons/reloadIcon.png") 0 0 no-repeat;
+  cursor: pointer;
 }
 
 /*------------------------------------------------------------------------------*/
